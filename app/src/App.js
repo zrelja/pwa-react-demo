@@ -6,7 +6,7 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} alt="logo" />
+        <img src={logo} style={{maxWidth: 350}} alt="logo" />
         <p>
          Example of offline PWA app.
         </p>

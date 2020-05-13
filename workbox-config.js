@@ -7,7 +7,7 @@ module.exports = {
    // Define runtime caching rules.
    runtimeCaching: [{
     // Match any request that ends with .png, .jpg, .jpeg or .svg.
-    urlPattern: /\.(?:js|png|jpg|jpeg|svg)$/,
+    urlPattern: /(\/)|(\.(?:js|png|jpg|jpeg|svg)$)/,
 
     // Apply a cache-first strategy.
     handler: 'CacheFirst',
@@ -22,5 +22,4 @@ module.exports = {
       },
     },
   }],
-  cleanupOutdatedCaches: false,
 };
